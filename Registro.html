@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>  
+
+		<title>Frex Movil</title>
+		<link rel = "stylesheet" href ="style/format.css"/>
+		<style type = "text/css"></style>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" aintegrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="  crossorigin="anonymous"></script>
+		<script src="./script/Registro-JS.js"></script>
+		<link rel="Stylesheet" href="./style/Registro-CSS.css">
+
+	</head>
+
+	<body>
+
+		<div class="fondoFormulario">
+		<img src="./images/agenda.jpg" class="fondoImagen" align=left>
+			<div class="FormularioTitulo">
+				<h1>Empezemos a organizar</h1>
+				<p>En este apartado elegiras un titulo para tu agenda personalizada</p>
+				<!--Creamos el formulario-->
+				<form name="form1">
+					<div class="Campos">
+						<!--titulo-->
+						<div class= "AtributosRegistro">
+							<label for="titulo">Ambito</label>
+						</div>
+						<div class= "Inputs">
+							<input type="text" name="titulo" placeholder="Titulo" required>
+						</div>
+					</div>
+				</form>
+				<button type="button" class="botonContinuar" id="botonContinuar">Continuar</button>
+			</div>
+
+			<div class="FormularioCategorias">
+				<h1>Continuemos con las categorias</h1>
+				<p class="comentarioCategorias">En este apartado podrás elegir los titulos para tus diferentes tareas</p>
+				<p class="ejemplosCategorias">Aqui tienes los mas utilizados por nuestros usuarios</p>
+				<!--Creamos el formulario-->
+				<form name="form2" id="form2">
+					<div class="Campos">
+						<!--categorias-->
+						<div class= "AtributosRegistro">
+							<label for="text">Categorias</label>
+						</div>
+						<div class= "Inputs">
+							<input type="text" name="text" placeholder="Cosas por hacer" required>
+						</div>
+
+						<div class= "Inputs">
+							<input type="text" name="text" placeholder="En proceso" required>
+						</div>
+
+						<div class= "Inputs">
+							<input type="text" name="text" placeholder="Terminadas" required>
+						</div>
+					</div>
+
+				</form>
+				<button type="button" class="botonTerminar" id="botonTerminar">Iniciar</button>
+			</div>
+		</div>
+
+		<div class="Pagina">
+			<div class="Cabecera">
+				<h1>TITULO</h1>
+			</div>			
+
+			<div class="Columnas">
+				<div class="Columna1">
+				<h2>1ª Categoria</h2>
+					<div class="ventana1"> 
+					
+					</div>
+					
+					<div class="ventana1"> 
+					
+					</div>					
+
+					<div class="ventana1"> 
+					
+					</div>
+				</div>						
+
+				<div class="Columna2">
+				<h2>2ª Categoria</h2>
+					<div class="ventana2"> 
+					
+					</div>
+					
+					<div class="ventana2"> 
+					
+					</div>								
+				</div>
+
+				<div class="Columna3">
+				<h2>3ª Categoria</h2>
+					<div class="ventana3"> 
+					
+					</div>			
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
