@@ -1,0 +1,49 @@
+nav{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: rgb(91, 116, 199);
+    padding: 0%; /*los botones pegaos a los extremos, sin padding*/
+    height: 10%;
+    width: 100%;
+}
+
+.title{
+    
+    position: relative;
+    text-align: center;
+    margin-top: 1%;
+    height: 60%;
+    width: 10%;
+    background-color: yellow;
+}
+
+section{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 90%;
+   
+}
+
+.background{
+    float:right;
+    bottom: 0%;
+    left: 0%;
+    width: 80%;
+    height: 100%;
+    background-image: url(../images/sol.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lateral_menu{
+    bottom: 0%;
+    left: 0%;
+    width: 20%;
+    height: 100%;
+    float:left;
+    background-color: rgb(197, 209, 248);
+}
+
