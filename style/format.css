@@ -1,0 +1,317 @@
+#header{
+  display: flex;
+  flex-direction: row;
+    position: absolute;
+   overflow: hidden;
+    right: 0%;
+    top: 0%;
+    background-color: rgb(91, 91, 230);
+    padding: 0%; /*los botones pegaos a los extremos, sin padding*/
+    height: 10%;
+    width: 100%;
+}
+
+#cara{
+  float: left;
+  margin-left: 3%;
+  height: 100%;
+  width: 5%;
+}
+
+#cara img{
+  height: 100%;
+  width: 100%;
+}
+
+#namee{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  float: left;
+  margin-left: 1%;
+  height: 75%;
+  width: 10%;
+}
+nav li a {
+    float: right;
+    background-color: transparent;
+    color: #fff; /*text color*/
+    text-decoration: none;
+    padding: 1%;
+    width: 10%;
+    text-align: center;
+    /*tamaño bloque de botones*/
+}
+
+nav li {
+    display: inline;/*mostrar botones en horizontal*/
+
+}
+
+  li a:hover:not(.active) { /*pasar raton por encima de boton*/
+    background-color: red;
+    color: white; /*text color*/
+
+  }
+  #caja{
+
+    position: absolute;
+    height:200px;
+    width:30%;
+    border:3px solid black;
+    float: center;
+    margin-left:35%;
+    margin-top:15%;
+    background-color: white;
+  }
+
+ 
+  .cruz{ /*cruz roja de los divs*/
+    height: 5%;
+    width: 5%;
+    float:left;
+    padding: 3%;
+  }
+
+  .cruz img{
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+
+ 
+
+
+body{
+  background-image: url("../images/luna.png");
+  background-attachment: fixed; /*Al hacer scroll la img no se mueve*/
+  background-size: 100% 100%;
+
+}
+
+
+/*clases de los 3 pops up ----------------------------------*/
+
+/*.intereses{
+  overflow: auto;
+  display: block;
+}*/
+
+
+@media only screen and (max-width: 768px) {/*700 x 480*/
+  #columna{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 600px) {/*600 x 480*/
+  #columna{
+
+    width:95%;
+    /*border:3px solid black;*/
+
+
+  }
+}
+
+
+.modal_oscuro{
+  top: 0;
+  left: 0;
+  /*visibility: hidden;*/
+  display:none;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#title{
+  overflow: hidden;
+  width: 15%;
+  font-size: 250%;
+  margin: 0.5%;
+  margin-left: 3%;
+  background-color: yellow;
+}
+
+
+#links div:hover:not(.active) { /*pasar raton por encima de boton*/
+background-color: red;
+color: black; /*text color*/
+
+}
+
+#links div{
+  margin: 7%;
+  text-align: center;
+}
+#links{
+  
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-flow: nowrap;
+  overflow: hidden;
+  width: 20%;
+  background-color: white;
+}
+
+
+
+
+#flex{
+  margin: 0.5%;
+  justify-content: space-between;
+  margin-left: 50%;
+  display: flex;
+  flex-direction: wrap;
+  background-color: red;
+  width: 20%;
+  height: 80%;
+
+}
+
+#iniciar{
+  overflow: hidden;
+  float: right;
+  margin: 2%;
+  background-color: white;
+}
+
+#registrarse{
+  overflow: hidden;
+  right: 0;
+  margin: 2%;
+  background-color: white;
+}
+
+#registrar {
+  margin: 1%;
+  float: right;
+
+}
+
+#registrar:hover:not(.active) {
+  background-color: red;
+  color: white; /*text color*/
+
+}
+
+/*pop Ups de inicioSesion.html*/
+
+
+.modal-contenido1{
+  visibility: inherit;
+  position: relative;
+  display: none;
+  border: 7px solid yellow;
+  background-color:white;
+  width:50%;
+  height:70%;
+  margin-top: 4%;
+  padding: 10px 20px;
+  margin-left: 25%;
+  margin-bottom: 20%;
+  z-index: 99; /*prioridad, se coloca encima del resto, se supone*/
+  overflow: auto;/*without scroll bar*/
+}
+.modal-contenido2{
+  display: none;
+  position: relative;
+  border: 7px solid red;
+  background-color:white;
+  width:40%;
+  height:60%;
+  margin-left: 25%;
+  padding: 10px 20px;
+  margin-top:10%;
+  margin-bottom: 10%;
+  z-index: 99; /*prioridad, se coloca encima del resto, se supone*/
+  overflow: auto;/*without scroll bar*/
+}
+.close{
+  height: 5%;
+  width: 5%;
+  margin-bottom:5%;
+
+}
+.close img{
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+/*clases de los 3 pops up ----------------------------------*/
+
+/*.intereses{
+  overflow: auto;
+  display: block;
+}*/
+
+#user{
+  background-color: lightblue;
+
+}
+#password{
+  background-color: lightblue;
+}
+#name{
+  background-color: lightblue;
+}
+#surname{
+  background-color: lightblue;
+}
+#email{
+  background-color: lightblue;
+
+}
+#date{
+  background-color: lightblue;
+}
+#interest{
+  background-color: lightblue;
+
+}
+#language{
+  background-color: lightblue;
+}
+#uso{
+  background-color: lightblue;
+}
+#correoInicioSesion{
+  background-color: lightblue;
+}
+#contraseñaInicioSesion{
+  background-color: lightblue;
+}
+
+#guardar{
+  height: 20%;
+  width: 20%;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+#borrar{
+  height: 20%;
+  width:20%;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+#login{
+  height: 20%;
+  width: 20%;
+  display: inline-block;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1.5px solid lightgrey;
+  margin-top: 1%;
+  margin-left: 35%;
+  color: black;
+}
