@@ -1,0 +1,72 @@
+
+body {
+    /*flex es para tamaño dinámico, para rellenar huecos, importante para hacer zoom*/
+    display: flex;
+    flex-flow: column;
+    word-wrap: break-word;
+}
+
+nav{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    background-color: rgb(91, 116, 199);
+    
+   
+}
+
+.title{
+    box-sizing: border-box;
+    float:left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-left: 3%;
+    font-size: 350%;
+    background-color: yellow;
+}
+
+.image{
+    top: 2%;
+    float:right;
+    margin-right: 3%;
+    height: 80px;
+    width: 80px;
+    background-image: url(../images/carmen.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section{
+    height: 50vh;
+    width: 50vw;
+    bottom: 0;
+    
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    background-color: red;
+   
+}
+
+.background{
+    float:right;
+    bottom: 0%;
+    left: 0%;
+    width: 80%;
+    height: inherit;
+    background-image: url(../images/sol.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lateral_menu{
+    bottom: 0%;
+    left: 0%;
+    width: 20%;
+    height: inherit;
+    float:left;
+    background-color: rgb(197, 209, 248);
+}
+
