@@ -216,29 +216,6 @@ ul, ol{
   transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
-/*
-.cajaInvitaciones:hover .imagenesMenu{
-	-webkit-transition: all .9s ;
-	-moz-transition: all .9s ease-in-out 0s;
-	-o-transition: all .9s ease-in-out 0s;
-	-ms-transition: all .9s ease-in-out 0s;
-	transition: all .9s ease-in-out 0s;
-}
-
-.botonClass li ul{
-	display: none;
-	position: absolute;
-	min-width: 8.7%;
-}
-
-.botonClass li:hover > ul{
-	display: inline-block;
-}
-
-ul > li {
-    display: inline-block;
-    display:inline;
-}
 
 
 

@@ -21,46 +21,55 @@
 
 .FormularioTitulo{
 	width: 50%;
-	height: 30%;
+	height: 33%;
 	margin-top: 30%;
 	margin-left: 25%;
 	position: absolute;
 	align-items: center;
 	text-align: center;
-	background-color: #D1D4E8;
+	background-color: #F5F5F5;
 	border-radius: 15px;
-	border: 3px solid #021AEB;
+	border: 3px solid rgb(182, 182, 182);
+	font-family:'Montserrat';
+	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s; /* Firefox < 16 */
+	animation: fadein 1s;
 	visibility: visible;
 }
 
 .FormularioTitulo h1{
 	font-size: 200%;
+	font-family:'Montserrat';
 }
 
 .AtributosRegistro{
 	font-size: 200%;
+	font-family:'Montserrat';
 }
 
 .Inputs{
 	margin-top: 3%;
+	font-family:'Montserrat';
 }
 
 .botonContinuar{
     width: 20%;
     height: 15%;
 	margin-top: 3%;
-	background-color: #3498db;
+	background-color: #28CE63;
 	color: white;
+	font-family:'Montserrat';
 }
 
 .FormularioTitulo form .Inputs input{
 	width: 70%;
 	height: 40px;
 	text-align: center;
-	border: 1px solid #58A3E8;
+	border: 1px solid rgb(204, 204, 204);
 	border-radius: 6px;
 	-webkit-appearance: none;
 	font-size: 150%;
+	font-family:'Montserrat';
 }
 
 
@@ -68,15 +77,16 @@
 
 .FormularioCategorias{
 	width: 50%;
-	height: 50%;
-	margin-top: 20%;
+	height: 55%;
+	margin-top: 16%;
 	margin-left: 25%;
 	position: absolute;
 	align-items: center;
 	text-align: center;
-	background-color: #D1D4E8;
+	background-color: #F5F5F5;
 	border-radius: 15px;
-	border: 3px solid #021AEB;
+	border: 3px solid rgb(182, 182, 182);
+	font-family:'Montserrat';
 	visibility: hidden;
 }
 
@@ -84,18 +94,20 @@
     width: 20%;
     height: 10%;
 	margin-top: 5%;
-	background-color: #3498db;
+	background-color: #28CE63;
 	color: white;
+	font-family:'Montserrat';
 }
 
 .FormularioCategorias form .Inputs input{
 	width: 70%;
 	height: 40px;
 	text-align: center;
-	border: 1px solid #58A3E8;
+	border: 1px solid #CCCCCC;
 	border-radius: 6px;
 	-webkit-appearance: none;
 	font-size: 150%;
+	font-family:'Montserrat';
 }
 
 /*__________________________________________________________________________________________PARTE DERECHA REGISTRO________________________________________________________________________________________________________*/
@@ -106,7 +118,9 @@
 	margin-top: -0.40%; 
 	margin-left: 49.5%;
 	position: absolute;
-	background-color: #7BA0E8;
+	background-image: url("../images/fondoCateg.png");
+	background-repeat: no-repeat;
+	background-size: auto;
 }
 
 .Cabecera{
@@ -114,13 +128,14 @@
     height: 10%;
 	margin-left: 10%;
 	margin-top: 2.5%;
-	background-color: #94D4FF;
+	background-color: rgb(219, 219, 219);
 	text-align: center;
 	align-items: center;
 	position: absolute;
 	border-radius: 15px;
+	font-family:'Montserrat';
 
-	border: 1px solid #0841EB; /* Color del borde, debe ser más oscuro que fondo */
+	border: 1px solid black; /* Color del borde, debe ser más oscuro que fondo */
 	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
@@ -128,14 +143,15 @@
 .Columna1{
     width: 20%;
     height: 45%;
-	background-color: #7BD9E8;
+	background-color: #F1F1F1F1;
 	margin-left: 10%;
 	margin-top: 15%;
 	position: absolute;
 	text-align: center;
 	border-radius: 15px;
+	font-family:'Montserrat';
 
-	border: 1px solid #0841EB; /* Color del borde, debe ser más oscuro que fondo */
+	border: 1px solid #b6b6b6b6; /* Color del borde, debe ser más oscuro que fondo */
 	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
@@ -143,14 +159,15 @@
 .Columna2{
     width: 20%;
     height: 30%;
-	background-color: #7BD9E8; 
+	background-color: #F1F1F1F1; 
 	margin-left: 40%;
 	margin-top: 15%;
 	position: absolute;
 	text-align: center;
 	border-radius: 15px;
+	font-family:'Montserrat';
 
-	border: 1px solid #0841EB; /* Color del borde, debe ser más oscuro que fondo */
+	border: 1px solid #b6b6b6b6; /* Color del borde, debe ser más oscuro que fondo */
 	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
@@ -158,14 +175,15 @@
 .Columna3{
     width: 20%;
     height: 15%;
-	background-color: #7BD9E8;
+	background-color: #F1F1F1F1;
 	margin-left: 70%;
 	margin-top: 15%;
 	position: absolute;
 	text-align: center;
 	border-radius: 15px;
+	font-family:'Montserrat';
 
-	border: 1px solid #0841EB; /* Color del borde, debe ser más oscuro que fondo */
+	border: 1px solid #b6b6b6b6; /* Color del borde, debe ser más oscuro que fondo */
 	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
@@ -173,8 +191,11 @@
 .ventana1{
 	width: 80%;
     height: 22%;
-	background-color: #87FFEF;
+	background-color: #F5F5F5F5;
 	border-radius: 15px;
+	border-color: #CCCCCC;
+	border-width: 1px;
+	border-style: solid;
 	margin-top: 10%;
 	margin-left: 10%;
 }
@@ -182,8 +203,11 @@
 .ventana2{
 	width: 80%;
     height: 27%;
-	background-color: #87FFEF;
+	background-color: #F5F5F5F5;
 	border-radius: 15px;
+	border-color: #CCCCCC;
+	border-width: 1px;
+	border-style: solid;
 	margin-top: 10%;
 	margin-left: 10%;
 }
@@ -191,8 +215,61 @@
 .ventana3{
 	width: 80%;
 	height: 35%;
-	background-color: #87FFEF;
+	background-color: #F5F5F5F5;
 	border-radius: 15px;
+	border-color: #CCCCCC;
+	border-width: 1px;
+	border-style: solid;
 	margin-top: 10%;
 	margin-left: 10%;
+}
+
+.lapis{
+	width: 65%;
+	height: 25%;
+	margin-top: 75%;
+	margin-left: 35%;
+	position: absolute;
+}
+
+.circuloVerde{
+	width: 3%;
+	height: 3%;
+	position: absolute;
+	margin-top: 67%;
+	margin-left: 46.5%;
+	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s; /* Firefox < 16 */
+	animation: fadein 1s;
+}
+
+.circuloGris{
+	width: 3%;
+	height: 3%;
+	position: absolute;
+	margin-top: 67%;
+	margin-left: 51.5%;
+	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s; /* Firefox < 16 */
+	animation: fadein 1s;
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
