@@ -9,18 +9,22 @@
     <link href="./style/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="./style/styles.css" type="text/css" rel="stylesheet"/>
     <link href="./style/stylesHome.css" type="text/css" rel="stylesheet"/>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+
     <script src="data/document.js"></script>
     <script src="./script/data.js"></script>
     <script src="./script/home.js"></script>
-    <script type="text/javascript">
-      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+    <script type="text/javascript"></script>
+    <script src="./script/myscript.js"></script>
+    <!--  $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
-      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };-->
     </script>
   </head>
   <body class="body">
-    
+
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
@@ -96,21 +100,22 @@
 
       <!-- Unnamed (Rectangle) -->
       <div id="u9" class="ax_default primary_button">
-        <div id="u9_div" class=""></div>
-        <div id="u9_text" class="text ">
-          <p><span>Iniciar sesión</span></p>
+        <!--<div id="u9_div" class=""></div>
+        <div id="u9_text" class="text ">-->
+          <button id = "iniciarSesion" type = "button">Iniciar Sesión</button>
         </div>
-      </div>
+      <!-- </div>-->
 
-      <!-- Unnamed (Rectangle) -->
-      <a href="Registro.html" style="text-decoration:none">
+
       <div id="u10" class="ax_default primary_button">
-        <div id="u10_div" class=""></div>
-        <div id="u10_text" class="text " id="registrarse">
-              <p><span>Registarse</span></p>
-        </div>
-      </div>
-      </a>
+      <!-- <div id="u10_div" class=""></div>
+        <div id="u10_text" class="text " id="registrarse">-->
+              <button id = "registrarse" type= "button">Registarse</button>
+       </div>
+      <!--</div>-->
+
+
+
 
       <!-- Unnamed (Rectangle) -->
       <div id="u11" class="ax_default heading_2">
@@ -159,9 +164,9 @@
 
       <!-- Unnamed (Rectangle) -->
       <div id="u18" class="ax_default primary_button">
-        <div id="u18_div" class=""></div>
+
         <div id="u18_text" class="text ">
-          <p style="font-size:10px;"><span>Prueba Redist ahora mismo</span></p><p style="font-size:8px;"><span>Servicio gratuito durante 30 días</span></p>
+          <button id ="Prueba" type="button" style="font-size:14px;"><span>Prueba Redist ahora mismo</span></p><p style="font-size:10px;"><span>Servicio gratuito durante 30 días</span></button>
         </div>
       </div>
 
@@ -170,23 +175,25 @@
 
         <!-- Unnamed (Rectangle) -->
         <div id="u20" class="ax_default box_3">
-          <div id="u20_div" class=""></div>
+          <div id="u20_div" class="">
+            <div id="u21" class="ax_default checkbox">
+
+
+
+                    <input id = "checkbox" type="checkbox" name= "casilla" required>Me gustaría recibir en mi correo eletrónico ofertas y noticias sobre Redist
+                  <!--<p style="font-size:10px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">&nbsp;</span><span style="font-family:'Montserrat';font-weight:400;">Me gustaría recibir en mi correo eletrónico ofertas y noticias sobre Redist</span></p>-->
+
+
+
+            </div>
+          </div>
           <div id="u20_text" class="text " style="display:none; visibility: hidden">
             <p></p>
           </div>
         </div>
 
         <!-- Unnamed (Checkbox) -->
-        <div id="u21" class="ax_default checkbox">
-          <label id="u21_input_label" for="u21_input" style="position: absolute; left: 0px;">
-            <img id="u21_img" class="img " src="./images/home/u21.svg"/>
-            <div id="u21_text" class="text ">
-                <input type="checkbox" class="checkbox">
-              <p style="font-size:10px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">&nbsp;</span><span style="font-family:'Montserrat';font-weight:400;">Me gustaría recibir en mi correo eletrónico ofertas y noticias sobre Redist</span></p>
-            </div>
-          </label>
-          <input id="u21_input" type="checkbox" value="checkbox"/>
-        </div>
+
       </div>
 
       <!-- Unnamed (Rectangle) -->
@@ -259,7 +266,7 @@
       </div>
 
       <!-- Unnamed (Image) -->
-      
+
       <div id="u32" class="ax_default image">
         <img id="u32_img" class="img " src="./images/home/u32.png"/>
         <div id="u32_text" class="text " style="display:none; visibility: hidden">
@@ -299,6 +306,37 @@
         </div>
       </div>
     </div>
+
+    <!--POPUP REGISTRO-->
+    <div class="modal_oscuro">
+      <div class="modal-contenido1">
+      <div class="close"><img src = "images/cruz.jpg"></div>
+        <form>
+          <fieldset>
+            <legend>Introduzca los siguientes datos:    </legend>
+            <p>Usuario: <input id="user" type="text" name="usuario" minlength="1" required></p>
+            <p>Contraseña: <input id="password" type="password" name="password" maxlength="10" placeholder="Máx. 10 caracteres" required></p>
+            <p>Correo electrónico: <input id="email" type="email" name="correo" size="40" placeholder="e.g. interfaces@gmail.com"required></p>
+            <p>Fecha de nacimiento: <input id="date" type="date" name="fecha" size="20" placeholder="dd/mm/aaaa" required></p>
+          </fieldset>
+          <label><input type="checkbox" name="casilla" required>He leído y acepto las condiciones de uso</label>
+          <p>
+            <div id = "guardarse">
+            <button id="guardar" type="button" value="Guardar">Guardar</button></div>
+            <input id="borrar" type="reset" value="Borrar">
+          </p>
+        </form>
+      </div>
+
+    <div class="modal-contenido2">
+      <div class="close"><img src = "images/cruz.jpg"></div>
+        <form>
+          <p>Correo electrónico: <input id="correoInicioSesion" type="email" name="correo" size="40" placeholder="e.g. interfaces@gmail.com"required></p>
+          <p>Contraseña: <input id="contraseñaInicioSesion" type="password" name="password" maxlength="8" placeholder="Máx. 8 caracteres" required></p>
+          <button id="login" type="button">Iniciar sesión</button>
+        </div>
+
+
     <script src="./script/ios.js"></script>
   </body>
 </html>
