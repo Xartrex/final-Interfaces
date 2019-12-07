@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
   var x = localStorage.getItem('user');
-  $('#namee').find('p').html(x);
+  $('#nombreUser').find('p').html(x);
 
    // When the user clicks on <div>, close the box
    $('.cruz').on('click', function(){
@@ -10,17 +10,30 @@ $(document).ready(function(){
         this.parentElement.style.display = 'none';
         else;
       });
-    
+
   $('#registrarse').on('click', function(){
+    $('.modal_oscuro').css("visibility", "visible");
     $('.modal_oscuro').fadeIn("slow");
     $('.modal-contenido1').fadeIn("slow");
 
   });
+  $('#guardarse').on('click', function(){
+    
+    alert('¡ENHORABUENA, te has registrado correctamente!  Comienza con un breve tutorial ahora.')
+    jump1();
 
-  $('#iniciar').on('click', function(){
+  })
+
+
+  $('#iniciarSesion').on('click', function(){
+    $('.modal_oscuro').css("visibility", "visible");
     $('.modal_oscuro').fadeIn("slow");
     $('.modal-contenido2').fadeIn("slow");
   });
+
+  $('#Prueba').on('click',function(){
+    jump1();
+  })
 
 
   $('.close').on('click', function(){
@@ -55,9 +68,12 @@ $(document).ready(function(){
 
 
 
+
+
 /*COOKIES*/
 
 $('body').on('click', '#guardar', function(){
+
 
   if(localStorage.getItem('email') != $('#email').val()){
 
@@ -65,27 +81,18 @@ $('body').on('click', '#guardar', function(){
 
     localStorage.setItem('password', $('#password').val());
 
-    localStorage.setItem('name', $('#name').val());
-
-    localStorage.setItem('surname', $('#surname').val());
-
     localStorage.setItem('email', $('#email').val());
 
     localStorage.setItem('date', $('#date').val());
 
-    localStorage.setItem('interest', $('#interest').val());
 
-    localStorage.setItem('language', $('#language').val());
-
-    localStorage.setItem('uso', $('#uso').val());
-
-    jump();
 
   }else{
 
-    alert('Ya existe una cuenta con este correo electrónico');
+    alert('¡Ups! Ya existe una cuenta con este correo electrónico, prueba con otro');
 
   }
+
 
 });
 
@@ -93,7 +100,7 @@ $('#login').on('click', function(){
 
   if(localStorage.getItem('#email') == $('email').val() && localStorage.getItem('#password') == $('password').val()){
 
-    window.open('index.html', '_self');
+    window.open('Tematicas1.html', '_self');
 
 
 
@@ -105,8 +112,12 @@ $('#login').on('click', function(){
 });
 
 function jump(){
-      window.open('index.html', '_self');
+      window.open('Tematicas1.html', '_self');
     }
+function jump1(){
+      window.open('Registro.html', '_self');
+}
+
 
 
 
