@@ -153,6 +153,7 @@ ul, ol{
 	display: block;
 }
 
+
 .imagenesMenu{
 	width: 15%;
 	height: 15%;
@@ -168,7 +169,18 @@ ul, ol{
 .fondoTematica1{
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to bottom right, #0D1BFF, #0DFFE2);
+	background-color:  lightgrey;
+}
+
+.fondoEstilo1{
+	background-image: url("../images/fondomadera.jpg");
+	width: 100vw;
+	height: 100vh;
+}
+.fondoEstilo2{
+	background-image: url("../images/fondoazul.jpg");
+	width: 100vw;
+	height: 100vh;
 }
 
 
