@@ -2295,13 +2295,13 @@ body.a {  background-color:rgba(255, 255, 255, 1);
   position: absolute;
 }
 
-/*.areaDispositivos{
-  width: 100%;
+.areaDispositivos{
+  width: 111%;
   height: 100%;
-  background-color: yellow;
+  background-color: transparent;
   position: absolute;
   z-index: 800000;
-}*/
+}
 
 .dispositivos{
   margin-top: 30%;
@@ -2310,3 +2310,64 @@ body.a {  background-color:rgba(255, 255, 255, 1);
   z-index: 2000000;
   visibility: hidden;
 }
+<<<<<<< HEAD
+=======
+
+.areaTraduccion{
+  width: 13%;
+  height: 5%;
+  margin-left: 64%;
+  margin-top: 4%;
+  /*border: 1px solid rgb(255, 0, 0);*/
+  background-color: transparent;
+  position: absolute;
+  z-index: 800000;
+}
+
+.ingless{
+  width: 11%;
+  height: 6%;
+  margin-left: 66%;
+  margin-top: 6.4%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.alemann{
+  width: 11.1%;
+  height: 5.75%;
+  margin-left: 66%;
+  margin-top: 8.7%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.francess{
+  width: 11.1%;
+  height: 5.75%;
+  margin-left: 66%;
+  margin-top: 11%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.españoll{
+  width: 11.1%;
+  height: 5.75%;
+  margin-left: 66%;
+  margin-top: 11%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.frances{
+  z-index: 880000;
+  width: 40%;
+  height: 30%;
+  margin-top: 4%;
+  margin-left: 22%;
+  position: absolute;
+}
+
+
+>>>>>>> b01d87d54bad4d39bcb6a2b6ef3cc4264cb334a4
