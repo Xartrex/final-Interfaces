@@ -17,13 +17,6 @@ $(document).ready(function(){
     $('.modal-contenido1').fadeIn("slow");
 
   });
-  $('#guardarse').on('click', function(){
-    
-    alert('¡ENHORABUENA, te has registrado correctamente!  Comienza con un breve tutorial ahora.')
-    jump1();
-
-  })
-
 
   $('#iniciarSesion').on('click', function(){
     $('.modal_oscuro').css("visibility", "visible");
@@ -65,14 +58,69 @@ $(document).ready(function(){
     $('.modal_oscuro').fadeIn("slow");
   });
 
+  $('#imagenCerrarPOPUP').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'hidden');
+  });
 
+  $('#clickPOPUP1').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
 
+  $('#clickPOPUP2').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
 
+  $('#clickPOPUP3').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
 
+  $('#clickPOPUP4').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP5').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP6').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP7').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP8').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP9').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP10').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP11').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP12').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP13').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
+
+  $('#clickPOPUP14').on('click', function(){
+    $('#fondoDifuminadoTematica1').css('visibility', 'visible');
+  });
 
 /*COOKIES*/
 
-$('body').on('click', '#guardar', function(){
+$('body').on('click', '#guardarse', function(){
 
 
   if(localStorage.getItem('email') != $('#email').val()){
@@ -85,7 +133,8 @@ $('body').on('click', '#guardar', function(){
 
     localStorage.setItem('date', $('#date').val());
 
-
+    alert('¡ENHORABUENA, te has registrado correctamente!  Comienza con un breve tutorial ahora.')
+    jump1();
 
   }else{
 
@@ -98,7 +147,7 @@ $('body').on('click', '#guardar', function(){
 
 $('#login').on('click', function(){
 
-  if(localStorage.getItem('#email') == $('email').val() && localStorage.getItem('#password') == $('password').val()){
+  if(localStorage.getItem('email') == $('#correoInicioSesion').val() && localStorage.getItem('password') == $('#contraseñaInicioSesion').val()){
 
     window.open('Tematicas1.html', '_self');
 

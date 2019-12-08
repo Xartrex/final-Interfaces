@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" aintegrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="  crossorigin="anonymous"></script>
-		<script src="./script/Registro-JS.js"></script>
+		<script src="./script/myscript.js"></script>
 		<link rel="Stylesheet" href="./style/Tematicas1-CSS.css">
 
 	</head>
@@ -18,28 +18,28 @@
 		<div class="fondoEstilo1">
 			<div class="cabeceraTematica1">
 				<img src="./images/imagenUsuarioPagina.png" class="imagenUsuarioPagina" align=left>
-				<p><div id="nombreUser"></div></p>
+				<p><div class="nombreUser">USUARIO</div></p>
 				<div class="menuDesplegable">
 					<ul class="nav">
 						<li><a href="">Fondos</a>
 							<ul>
-								<li><a href="./Estilo1.html">Estilo 1</li>
-								<li><a href="./Estilo2.html">Estilo 2</li>
-								<li><a href="./Tematicas1.html">Estilo original</li>
+								<li><a href="./Estilo1.html">Estilo 1</a></li>
+								<li><a href="./Estilo2.html">Estilo 2</a></li>
+								<li><a href="./Tematicas1.html">Estilo original</a></li>
 							</ul>
 						</li>
 						<li><a href="">Cuenta</a></li>
 						<li><a href="">Servicios</a></li>
 						<li><a href="">Tematicas</a>
 							<ul>
-								<li><a href="" style="text-decoration:none">Calendario</li>
-								<li><a href="" style="text-decoration:none">Tablas</li>
+								<li><a href="" style="text-decoration:none">Calendario</a></li>
+								<li><a href="" style="text-decoration:none">Tablas</a></li>
 							</ul>
 						</li>
 						<li><a href="">Acerca de ...</a>
 							<ul>
-								<li><a href="" style="text-decoration:none">Nosotros</li>
-								<li><a href="" style="text-decoration:none">FrexMovil</li>
+								<li><a href="" style="text-decoration:none">Nosotros</a></li>
+								<li><a href="" style="text-decoration:none">FrexMovil</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -76,12 +76,12 @@
 						<td>04</td>
 						<td>05</td>
 						<td>06</td>
-						<td>07</td>
+						<td id="clickPOPUP6">07</td>
 					</tr>
 					<tr>
 						<td>08</td>
 						<td>09</td>
-						<td>10</td>
+						<td id="clickPOPUP7">10</td>
 						<td>11</td>
 						<td>12</td>
 						<td>13</td>
@@ -89,7 +89,7 @@
 					</tr>
 					<tr>
 						<td>15</td>
-						<td>16</td>
+						<td id="clickPOPUP8">16</td>
 						<td>17</td>
 						<td>18</td>
 						<td>19</td>
@@ -103,17 +103,17 @@
 						<td>25</td>
 						<td>26</td>
 						<td>27</td>
-						<td>28</td>
+						<td id="clickPOPUP9">28</td>
 					</tr>
 					<tr>
-						<td>29</td>
+						<td id="clickPOPUP10">29</td>
 						<td>30</td>
 						<td>31</td>
 					</tr>
 				</table>
 			</div>
 
-			<!--<div class= "cajaInvitaciones">
+			<div class= "cajaInvitaciones">
 				<ul class="botonClass">
 					<li class= "imagenesPrincipalMenu"><img src="./images/lista.png" class="imagenesPrincipalMenu" align=left a>
 						<ul class="sub-menu">
@@ -124,7 +124,31 @@
 						</ul>
 					</li>
 				</ul>
-			</div>-->
+			</div>
+
+			<div class= "fondoDifuminadoTematica1" id= "fondoDifuminadoTematica1">
+				<div class= "popUpCalendario">
+					<img src="./images/cruz.jpg" class="imagenCerrarPOPUP" id="imagenCerrarPOPUP" align=left>
+					<h1>TRABAJO</h1>
+					<div class= "cuadroDeTexto">
+						<p>Reunion con los activictas de google para cerrar acuerdos en la privacidad de usuarios</p>
+					</div>
+
+					<div class= "cajaInvitacionesPOPUP">
+					<ul class="botonClassPOPUP">
+						<li class= "imagenesPrincipalMenuPOPUP"><img src="./images/grupo.png" class="imagenesPrincipalMenuPOPUP" align=left a>
+							<ul class="sub-menuPOPUP">
+								<li class= "imagenesMenuPOPUP"><img src="./images/green_user.png" class="imagenesMenuPOPUP" align=left></li>
+								<li class= "imagenesMenuPOPUP"><img src="./images/green_user.png" class="imagenesMenuPOPUP" align=left></li>
+								<li class= "imagenesMenuPOPUP"><img src="./images/green_user.png" class="imagenesMenuPOPUP" align=left></li>
+								<li class= "imagenesMenuPOPUP"><img src="./images/green_user.png" class="imagenesMenuPOPUP" align=left></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</body>
 </html>
