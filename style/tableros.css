@@ -132,7 +132,7 @@ section{
     min-width: 250px;
     min-height: 150px;
     margin-bottom:5%;
-    background-color: (rgb(173, 173, 173);
+    background-color: rgb(173, 173, 173);
 }
 
 .event_title{
@@ -148,7 +148,7 @@ section{
     border-radius: 10%;
     float:right;
     background-image: url("../images/cruz.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   
