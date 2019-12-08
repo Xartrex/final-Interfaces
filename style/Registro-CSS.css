@@ -22,7 +22,7 @@
 .FormularioTitulo{
 	width: 50%;
 	height: 33%;
-	margin-top: 30%;
+	margin-top: 15%;
 	margin-left: 25%;
 	position: absolute;
 	align-items: center;
@@ -53,8 +53,7 @@
 }
 
 .botonContinuar{
-    width: 20%;
-    height: 15%;
+    box-sizing: content-box;
 	margin-top: 3%;
 	background-color: #28CE63;
 	color: white;

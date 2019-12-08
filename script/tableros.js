@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+  $('.user_name').text("alex");
+  var x = localStorage.getItem('user');
+  if(x)
+  $('.user_name').text(x);
+  else;
+
+
 $('#drop').on('mouseenter', function(){
   var y = $(this).offset(); /*coger posicion del div*/
   /*mover por up con respecto coordenadas para que cuadre*/
@@ -58,16 +65,26 @@ $('.cruz').on('click', function(){
 */
   
   
+$('#new_list').on('click', function(){
+  if(confirm('¿Seguro que quieres crear una lista?'))
+  $('.list:first').clone(true).remove('.evento-content').appendTo('.lists')
+});
+
+$('.add_event').on('click', function(){
+  if(confirm('¿Seguro que quieres crear un evento?'))
+  $('.evento-content:first').clone(true).insertBefore(this);
+  else;
+});
 
   /*Añadir lista   /////
-   me cambia el nombre de la clase evento y por tanto lAs funciones jquery no funcionan en los clones*/
+   me cambia el nombre de la clase evento y por tanto lAs funciones jquery no funcionan en los clones
   $('.add_event').on('click', function(){
     if(confirm('¿Seguro que quieres crear una lista?')){
     $(this.parentElement).addClass('event-content');
     $(".event-content").clone(true).prependTo(this.parentElement.parentElement);
     }
     else;
-  });
+  });*/
 
 
   /*Añadir evento, no consigo clonar la clase evento, solo me deja el simbolo añadir o la lista entera

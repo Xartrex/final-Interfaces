@@ -31,9 +31,10 @@ nav{
 }
 
 .user_img{
-    margin: 1%;
-    display: inline-block;
-    background-image: none;
+    margin-left: 2%;
+    min-width: 65px;
+    min-height: 50px;
+    background-image: url("../images/caraa.png");
     background-size: 100% 100%;
 }
 
@@ -41,7 +42,6 @@ nav{
     font-size: 150%;
     flex-shrink:0; 
     padding:1%;
-    margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 1%;
     display: inline-block;
@@ -136,6 +136,9 @@ section{
 }
 
 .list{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
     margin: 1%;;
     padding:1%;
     box-sizing: content-box;
@@ -198,7 +201,7 @@ section{
 
 .add_event{
     border-radius: 10%;
-    background-image: url("../images/añadir.jpeg");
+    background-image: url("../images/anadir.jpeg");
     background-size: cover;
     margin: auto; /*al centro*/
     height: 75px;
@@ -206,27 +209,46 @@ section{
 }
 
 footer{
+    align-items: center;
     margin-top: 1%;
     padding: 1%;
-    width: 96vw;
-    height: 10vh;
-    display: flex;
-    flex-flow: column;
+    box-sizing: content-box;
+    background-size: 100% 100%;
 }
 
 #redist{
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    background-image: url("../images/fueraLapis.png");
     background-size: 100% 100%;
 }
 
-.social{
+#social{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    width: 97vw;
+    margin-bottom: 2%;
     /*align-items: center;*/
 }
 
-.social div{
-    width: 20%;
-    height: 20%;
+#social div{
+    margin:2%;
+    align-self: center;
+    width: 80px;
+    height: 80px;
     background-size: 100% 100%;
+    background-color: blue;
+}
+
+#insta{
+    background-image: url("../images/insta.jpg");
+}
+
+#face{
+    background-image: url("../images/facebook.png");
+}
+#twitter{
+    background-image: url("../images/twitter.jpeg");
 }
